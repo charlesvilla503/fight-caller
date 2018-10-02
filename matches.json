@@ -1,0 +1,47 @@
+{
+  "date": "10-06-2018",
+  "fighterA": {
+    "firstName": "Jessie",
+    "lastName": "Vargas"
+  },
+  "fighterABoxrecID": "468475",
+  "fighterB": {
+    "firstName": "Thomas",
+    "lastName": "Dulorme"
+  },
+  "fighterBBoxrecID": "http://boxrec.com/en/boxer/462637",
+  "location": "Chicago, IL",
+  "television": "DAZN"
+}
+
+{
+  "date": "10-06-2018",
+  "fighterA": {
+    "firstName": "Artur",
+    "lastName": "Beterbiev"
+  },
+  "fighterABoxrecID": "http://boxrec.com/en/boxer/646981",
+  "fighterB": {
+    "firstName": "Callum",
+    "lastName": "Johnson"
+  },
+  "fighterBBoxrecID": "http://boxrec.com/en/boxer/552122",
+  "location": "Chicago, IL",
+  "television": "DAZN"
+}
+
+{
+  "date": "10-06-2018",
+  "fighterA": {
+    "firstName": "Danny",
+    "lastName": "Roman"
+  },
+  "fighterABoxrecID": "http://boxrec.com/en/boxer/549073",
+  "fighterB": {
+    "firstName": "Gavin",
+    "lastName": "McDonnell"
+  },
+  "fighterBBoxrecID": "http://boxrec.com/en/boxer/551317",
+  "location": "Chicago, IL",
+  "television": "DAZN"
+}
