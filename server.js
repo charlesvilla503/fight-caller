@@ -34,6 +34,8 @@ app.use('/api/users/', usersRouter);
 app.use('/api/auth/', authRouter);
 app.use('/api/fights/', fightRouter);
 
+app.use(express.static('./public'));
+
 
 const jwtAuth = passport.authenticate('jwt', { session: false });
 

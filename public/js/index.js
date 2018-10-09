@@ -16,7 +16,6 @@ function submitNew() {
             success: (response) => {
                 console.log("User created")
             },
-
             error: (err) => {
                 console.log(err);
             },
