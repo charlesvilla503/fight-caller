@@ -3,6 +3,8 @@
 const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
+var commentSchema = mongoose.Schema({ content: 'string' });
+
 const fightSchema = mongoose.Schema({
   date: {type: Date},
   fighterA: {
@@ -16,10 +18,12 @@ const fightSchema = mongoose.Schema({
   },
   fighterBBoxrecID: {type: String},
   location: {type: String},
-  television: {type: String}
+  television: {type: String},
+  comments: [commentSchema]
 },
   {collection: 'fights'}
 );
+
 
 fightSchema.virtual('fighterAName').get(function() {
   return `${this.fighterA.firstName} ${this.fighterA.lastName}`.trim();
@@ -39,7 +43,8 @@ fightSchema.methods.serialize = function() {
     fighterB: this.fighterBName,
     fighterBBoxrecID: this.fighterBBoxrecID,
     location: this.location,
-    television: this.television
+    television: this.television,
+    comments: this.comments
   };
 };
 
