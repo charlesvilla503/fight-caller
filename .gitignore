@@ -3,3 +3,5 @@ test/
 matches.json
 caller-server.js
 .env
+public/.DS_Store
+.DS_Store
