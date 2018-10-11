@@ -24,7 +24,6 @@ const fightSchema = mongoose.Schema({
   {collection: 'fights'}
 );
 
-
 fightSchema.virtual('fighterAName').get(function() {
   return `${this.fighterA.firstName} ${this.fighterA.lastName}`.trim();
 });

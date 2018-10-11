@@ -5,12 +5,12 @@ const morgan = require('morgan');
 const mongoose = require('mongoose');
 const passport = require('passport');
 
-mongoose.Promise = global.Promise;
-
 const { DATABASE_URL, PORT } = require('./config');
 const { router: fightRouter } = require('./fights');
 const { router: usersRouter } = require('./users');
 const { router: authRouter, localStrategy, jwtStrategy } = require('./auth');
+
+mongoose.Promise = global.Promise;
 
 const app = express();
 
